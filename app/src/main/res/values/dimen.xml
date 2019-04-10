@@ -6,6 +6,6 @@
     <dimen name="text_size_small">13sp</dimen>
     <dimen name="text_size_smaller">11sp</dimen>
 
-    <dimen name="topLayoutHeight">75dp</dimen>
+    <dimen name="topLayoutHeight">40dp</dimen>
 
 </resources>

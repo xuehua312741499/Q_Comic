@@ -1,6 +1,8 @@
 package com.rdc.bms.q_comic.mvp.view.activity;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +15,7 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.MenuItem;
 
+import android.view.WindowManager;
 import com.rdc.bms.q_comic.R;
 import com.rdc.bms.q_comic.base.BaseActivity;
 import com.rdc.bms.q_comic.base.BaseLazyFragment;
@@ -166,4 +169,10 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainCo
         Log.d(TAG, "setKindTitle: "+list);
         ((TypeFragment)(mFList.get(1))).setKindTitleList(list);
     }
+
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    private void highApiEffects() {
+        getWindow().getDecorView().setFitsSystemWindows(true);
+    }
+
 }

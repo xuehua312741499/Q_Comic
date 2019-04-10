@@ -247,7 +247,7 @@ public class JsoupUtil {
     /**
      * 获取某一分类下的TypeBean项
      * @param doc
-     * @param kind 0:题材,1:进度,2:受众,3:媒体
+     * @param kind 0:,1:进度,2:受众,3:媒体
      * @return
      */
     public static List<TypeBean> toTypeBeanList(Element doc,int kind){
